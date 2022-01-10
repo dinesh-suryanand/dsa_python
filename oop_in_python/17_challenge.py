@@ -1,6 +1,3 @@
-from _typeshed import Self
-
-
 class Car:
     def __init__(self,model,color) -> None:
         self.model = model
