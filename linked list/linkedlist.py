@@ -40,19 +40,18 @@ class LinkedList:
 
 
     #method to insert element into linked list
-    def insert(self,new_element,positon):
+    def insert(self, new_element, position):
         counter = 1
         current = self.head
-
-        if positon > 1:
-            while current and counter < positon:
-                if counter == positon - 1:
+        if position > 1:
+            while current and counter < position:
+                if counter == position - 1:
                     new_element.next = current.next
                     current.next = new_element
                 current = current.next
                 counter += 1
-        elif positon == 1:
-            new_element.next =  self.head
+        elif position == 1:
+            new_element.next = self.head
             self.head = new_element
 
     #method to delete an element 
@@ -62,39 +61,45 @@ class LinkedList:
         while current.value != value and current.next:
             previous = current
             current = current.next
-        
+    
         if current.value == value:
             if previous:
                 previous.next = current.next
             else:
                 self.head = current.next
 
+    # method to display            
+    def display(self):
+        current = self.head
+        while current != None:
+            print(current.value , end= " -> ")
+            current = current.next
+        print("END")
+    
+
+
 e1 = Element(1)
 e2 = Element(2)
 e3 = Element(3)
 e4 = Element(4)
+e5 = Element(97)
+e6 = Element(69)
 
 # Start setting up a LinkedList
 ll = LinkedList(e1)
 ll.append(e2)
 ll.append(e3)
+ll.append(e4)
+ll.append(e6)
+ll.append(e5)
+# print(ll.get_position(3).value)
+ll.append(e2)
 
-# Test get_position
-# Should print 3
-print(ll.head.next.next.value)
-# Should also print 3
-print(ll.get_position(3).value)
+ll.display()
 
-# Test insert
-ll.insert(e4,3)
-# Should print 4 now
-print(ll.get_position(3).value)
+print(e5.next)
 
-# Test delete
-ll.delete(1)
-# Should print 2 now
-print(ll.get_position(1).value)
-# Should print 4 now
-print(ll.get_position(2).value)
-# Should print 3 now
-print(ll.get_position(3).value)
+
+# ll.display()
+
+
