@@ -1,14 +1,14 @@
 string1 = "baccad" # never name string as str    ----> beacuse of str() function
 
 
-def remo(stri):
+def remov(stri):
     ans = ""
     for i in stri: 
         if i == 'a' or i == 'A':
             continue
         ans += str(i)
     return ans
-print(remo(string1))
+print(remov(string1))
 
 
 
@@ -26,7 +26,8 @@ def rem_word(txt):
     return s
 
 
-def skip(processed, unprocessed): # most importnt method ,, p ,up.....
+#using recursion
+def skip(processed, unprocessed): # most important method ,, p ,up.....
     if len(unprocessed) == 0:
         print(processed)
         return

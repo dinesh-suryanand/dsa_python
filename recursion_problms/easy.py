@@ -1,23 +1,25 @@
-def funn(n):
+"""
+        To understand recursion
+"""
+def print_nums(n):
     if n ==0 :
         return
     print(n)
-    funn(n-1)
+    print_nums(n-1)
 
 
-
-def funrev(n):
+def print_nums_rev(n):
     if n == 0:
         return
-    funrev(n-1)
+    print_nums_rev(n-1)
     print(n)
 
 
-def funboth(n):
+def print_both(n):
     if n ==0 :
         return
     print(n)
-    funboth(n-1)
+    print_both(n-1)
     print(n)
 
-print(funboth(5))
+print(print_both(5))
