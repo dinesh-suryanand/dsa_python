@@ -12,7 +12,7 @@ class LinkedList:
     def __init__(self,value) -> None:
         new_node = Node(value)  # create new node
         self.head = new_node    # makes that node as head
-        self.tail = new_node    # makes that node as tail
+                                # makes that node as tail
         self.length = 1
 
     def append(self,value):

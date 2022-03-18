@@ -1,5 +1,6 @@
 nnums = [44,8,42,-2,54,-34,76,14,-60,-43,67]
 nnums.sort()
+print(nnums)
 toFind = 76
 
 
