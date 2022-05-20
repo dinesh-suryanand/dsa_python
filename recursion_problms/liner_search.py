@@ -1,5 +1,5 @@
 """
-    Linear search using recursion ,
+    Linear search using recursion
 
 """
 
