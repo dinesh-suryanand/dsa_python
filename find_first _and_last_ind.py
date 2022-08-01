@@ -1,4 +1,5 @@
 """
+    leet code 34
     to find the first and last  index in an element in a sorted array 
     
     input:[1,2,5,7,7,7,7,9,13,13] target = 7
