@@ -9,9 +9,6 @@
     output:[-1,-1]
 """
 
-from turtle import right
-
-
 arr = [1,2,5,7,7,7,7,9,13,13]
 target =13
 
