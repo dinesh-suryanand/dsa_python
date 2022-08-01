@@ -1,6 +1,5 @@
-arr = [1,3,4,4,4,6]
+print(2==2)
 
-arr = set(arr)
+print(1 - True)
 
-arr = list(arr)
-print(arr)
+print(1-False)
